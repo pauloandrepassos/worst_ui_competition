@@ -1,0 +1,268 @@
+.main {
+    background-image: linear-gradient(rgba(207, 207, 207, 0.5), rgba(0, 0, 0, 0.5)),
+        url('/img_olimpiada.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.signupContainer {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.progressBarContainer {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progressBarContainer div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progressBarContainer p {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.progressBar {
+    height: 8px;
+    background-color: #ff0000; /* Cor da barra de progresso */
+    transition: width 0.3s ease;
+}
+
+
+.signupForm {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formGroup input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.errorText {
+    color: #228b22;
+    font-weight: bold;
+    text-align: end;
+}
+
+.virtualKeyboard {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.virtualKeyboard button {
+    width: 14%;
+}
+
+.letterButton, .backspaceButton, .spaceButton, .generateButton {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.letterButton:hover, .backspaceButton:hover, .spaceButton:hover {
+    background-color: #0056b3;
+}
+
+
+.generateButton {
+    margin: 5px auto;
+}
+
+.nameInput {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    color: #333;
+    cursor: not-allowed;
+}
+
+.question {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.birthDateContainer {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.birthDateContainer select {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    color: #333;
+    cursor: pointer;
+    appearance: none; /* Remove a seta padrão do select */
+    text-align-last: center; /* Centraliza o texto do item selecionado */
+}
+
+/* Estilo para remover as setas de rolagem do select ao interagir */
+.birthDateContainer select::-ms-expand {
+    display: none;
+}
+
+.endSection span {
+    text-align: center;
+    font-size: 15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.divButtons {
+    display: flex;
+    align-items: center;
+    width: 33.33%;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.center {
+    justify-content: center;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.signupButton,
+.nextButton,
+.backButton,
+.cancelButton {
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signupButton {
+    background-color: transparent;
+    border: none;
+    color: #b4b3b3;
+}
+
+.nextButton {
+    background-color: #ff0000;
+}
+
+.nextButton:hover {
+    background-color: #790000;
+}
+
+.backButton {
+    background-color: #007bff;
+}
+
+.backButton:hover {
+    background-color: #0056b3;
+}
+
+.cancelButton {
+    background-color: #228b22;
+    margin: auto;
+}
+
+.cancelButton:hover {
+    background-color: #165e16;
+}
+
+.profileSection {
+    display: flex;
+    align-items: center;
+}
+
+.profilePreview {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profileInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.downloadButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.downloadButton:hover {
+    background-color: #0056b3;
+}
+
+.hiddenInput {
+    display: none;
+}
+
+.uploadText {
+    cursor: pointer;
+}
+
+

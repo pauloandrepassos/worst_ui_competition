@@ -1,0 +1,87 @@
+/* Navbar.module.css */
+
+.nav {
+    background-color: #002147;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 80px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logoImage {
+    width: 100px;
+    height: auto;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    transition: transform 10s ease;
+    position: relative;
+}
+
+.navItem a {
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navItem a:hover {
+    color: #00aaff;
+}
+
+.menuIcon {
+    font-size: 24px;
+    color: #ffd700;
+    cursor: pointer;
+}
+
+.navLinks {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #002147;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    z-index: 999;
+}
+
+.navLinks.open {
+    transform: translateX(0);
+}
+
+.navItem {
+    padding: 20px 0;
+}
+
+
+.closeIcon {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 10px;
+    font-size: 24px;
+    color: #ffd700;
+    cursor: pointer;
+}
+
+.closeIcon:hover {
+    color: #00aaff;
+}

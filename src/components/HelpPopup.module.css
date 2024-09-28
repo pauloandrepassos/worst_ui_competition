@@ -1,0 +1,117 @@
+.popup {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    width: 600px;
+    max-width: 80%;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 10s ease-in-out, opacity 10s ease-in-out;
+    z-index: 1000;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 80vh; /* Define uma altura máxima */
+    overflow-y: auto;  /* Adiciona scroll se o conteúdo ultrapassar a altura */
+}
+
+.popupExpanded {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 10s ease-in-out, opacity 10s ease-in-out;
+    z-index: 1000;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto; /* Adiciona scroll se o conteúdo ultrapassar a altura */
+}
+
+.popupClosing {
+    transform: translateY(150%);
+}
+
+.arrowUpButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.closeButton {
+    background-color: transparent;
+    border: none;
+    color: #d9d8d8;
+    font-size: 11px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.sendButton {
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sendButton:hover {
+    background-color: #0056b3;
+}
+
+.popup input[type="text"], .popupExpanded input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    transition: border-color 0.3s, background-color 0.3s;
+    color: black;
+}
+
+.popup input[type="text"]:focus, .popupExpanded input[type="text"]:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    outline: none;
+}
+
+/* Estilos para as infoTag */
+.infoTag {
+    font-size: 12px;
+    width: 100%;
+    color: #666;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-left: 4px solid #007bff;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.infoTag:hover {
+    background-color: #e6f0ff;
+    color: #333;
+}
